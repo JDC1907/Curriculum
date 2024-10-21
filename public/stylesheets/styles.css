@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    background-color: aliceblue;
+
+}
+
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Este sirve para pasar el mouse por encima el hover */
+nav a:hover {
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+#photo {
+    width: 200px;
+    height: auto;
+}
+
+section {
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #e4ffe3;
+
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+
+    /* borde redondeado con un radio de 5 píxeles */
+
+    /* en navegadores basados en WebKit, 
+    como versiones antiguas de Safari y Chrome. */
+    -webkit-border-radius: 5px;
+
+    /* en navegadores antiguos de Mozilla, 
+    como Firefox.  */
+    -moz-border-radius: 5px;
+
+    /* en navegadores modernos. */
+    border-radius: 5px;
+    -webkit-box-shadow: 14px 9px 13px -4px rgba(153, 153, 153, 0.2);
+    -moz-box-shadow: 14px 9px 13px -4px rgba(153, 153, 153, 0.2);
+    box-shadow: 14px 9px 13px -4px rgba(153, 153, 153, 0.2);
+
+}
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
+
+
+/* FLEX */
+/* #experiencia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 24vh;
+    flex-wrap: wrap;
+}
+
+#experiencia h2, #resumen p{
+    width: 50%;
+}
+
+#experiencia{
+    max-width: 50%;
+} */
+
+/* GRID */
+
+
+#experiencia{
+    display: grid;
+    justify-content: space-around;
+    align-items: stretch;
+    grid-template-areas: "A D" 
+                         "B D"; 
+}
+
+#experiencia h2{
+    grid-area: A;
+ 
+}
+
+
+#experiencia p{
+    grid-area: B;
+ 
+}
+#experiencia img{
+    grid-area: D;
+ 
+}
