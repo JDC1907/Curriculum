@@ -191,17 +191,6 @@ header {
     justify-content: center;
 }
 
-/* li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(109, 109, 109);
-    font-size: 1rem;
-} */
-
-
 
 /* Diseño del boton al momento de cambiar el tamano */
 @media(max-width: 992px) {
@@ -218,6 +207,12 @@ a {
     .dropdown_menu {
         display: block;
     }
+    body {
+        padding: 50px 30px; 
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width: 576px) {
@@ -225,6 +220,13 @@ a {
         left: 2rem;
         width: unset;
     }
+    body {
+        padding: 20px; 
+    }
+    .habilidades {
+        font-size: 24px; 
+    }
+    
 
 }
 
@@ -353,8 +355,37 @@ span{
 
 }
 
-@media
+@media (max-width: 768px) {
+    .sobremi {
+        flex-direction: column;
+        padding: 0 20px; 
+        gap: 2rem; 
+    }
+    .sobremi .descripcion h1 {
+        font-size: 2.5rem; 
+    }
+    .sobremi-img img {
+        width: 40vw; 
+    }
+    .experiencia {
+        padding-left: 10px;
+    }
 
+    .experience-item {
+        padding: 10px;
+    }
+    .educacion {
+        padding: 20px 10px;
+        margin: 10px 0;
+    }
+    .contacto {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+}
 
 /* ----------------Experiencia--------------------- */
 /* Estilos para la sección de Experiencia */
@@ -470,137 +501,6 @@ span{
 
 
 
-
-
-
-/* -------------------------------------------------------------------
-        Esto es lo que realicé en clases */
-
-
-/* Este sirve para pasar el mouse por encima el hover */
-nav a:hover {
-    text-decoration: underline;
-    cursor: crosshair;
-}
-/*  Pie de pagina */
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-h2 {
-    text-align: left;
-}
-
-p {
-    text-align: justify;
-}
-
-#photo {
-    width: 200px;
-    height: auto;
-}
-
-section {
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 1px 8px 2px;
-
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt ;
-
-    /* relleno (espacio interno) de 
-    1.5% en la parte superior e inferior y 
-    0.8% a los lados derecho e izquierdo. */
-
-    padding: 1% 0.8%;
-
-    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
-    dándoles un valor específico de 1.2% para esos lados. */
-
-    padding-left: 0;
-    padding-right: 0 ;
-
-    /* borde redondeado con un radio de 5 píxeles */
-
-    /* en navegadores basados en WebKit, 
-    como versiones antiguas de Safari y Chrome. */
-    -webkit-border-radius: 5px;
-
-    /* en navegadores antiguos de Mozilla, 
-    como Firefox.  */
-    -moz-border-radius: 5px;
-
-    /* en navegadores modernos. */
-
-
-}
-
-nav ul {
-
-    /* Modelo de diseño flexible */
-    display: flex;
-    justify-content: space-around;
-
-}
-
-section form {
-
-    /* Modelo de diseño en cuadrícula */
-    display: grid;
-    row-gap: 0.5rem;
-
-}
-
-
-/* FLEX */
-/* #experiencia{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    height: 24vh;
-    flex-wrap: wrap;
-}
-
-#experiencia h2, #resumen p{
-    width: 50%;
-}
-
-#experiencia{
-    max-width: 50%;
-} */
-
-/* GRID */
-
-
-#experiencia {
-    display: grid;
-    justify-content: space-around;
-    align-items: stretch;
-    grid-template-areas: "A D"
-        "B D";
-}
-
-#experiencia h2 {
-    grid-area: A;
-
-}
-
-
-#experiencia p {
-    grid-area: B;
-
-}
-
-#experiencia img {
-    grid-area: D;
-
-}
 
 
 
