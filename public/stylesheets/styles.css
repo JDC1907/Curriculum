@@ -1,18 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
     font-family: "Poppins", sans-serif;
-
 }
-
-/* html{
-    font-size: 62.5%;
-} */
 body {
     width: 100%;
     height: 100vh;
@@ -23,15 +16,8 @@ body {
     background-size: cover;
     background-position: center;
     padding: 100px 90px;
-    
 }
-
-
-
-
-
-
-/* ---------------Header------------------- */
+/*----------------------------Header----------------------------*/
 .logo a {
     color: #3a4a60;
 }
@@ -40,9 +26,7 @@ body {
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
-
 }
-
 .logo:hover {
     transform: scale(1.2);
 }
@@ -54,8 +38,6 @@ body {
     left: 0;
     z-index: 99;
 }
-
-
 .contenedor-cabecera header {
     max-width: 1100px;
     margin: auto;
@@ -64,12 +46,10 @@ body {
     justify-content: space-between;
     padding: 0px;
 }
-
 .contenedor-cabecera header ul {
     display: flex;
     list-style: none;
 }
-
 .contenedor-cabecera header .navbar ul li a {
     text-align: none;
     color: #3a4a60;
@@ -80,17 +60,14 @@ body {
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
-
 .contenedor-cabecera header .navbar ul li a:hover {
     color:#4b98c4;
     border-bottom: 3px solid #4b98c4 ;
 }
-
 header {
     position: relative;
     padding: 0 2rem;
 }
-
 .navbar {
     width: 100%;
     height: 60px;
@@ -100,24 +77,20 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 .navbar .links {
     display: flex;
     gap: 2rem;
 }
-
 .navbar .toggle_btn {
     color: rgb(48, 105, 155);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
-
 .action_btn {
     background-color: #889293;
     color: white;
@@ -130,18 +103,15 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .action_btn:hover {
     transform: scale(1.1); 
     background-color: #474745; 
     color: #ffffff; 
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); 
 }
-
 .action_btn:active {
     scale: 0.95;
 }
-
 /* Dropdown del menu */
 .dropdown_menu {
     display: none;
@@ -156,18 +126,15 @@ header {
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .dropdown_menu.open {
     height: 240px;
 }
-
 .dropdown_menu li {
     padding: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .dropdown_menu a{
     text-align: none;
     color: #3a4a60;
@@ -177,21 +144,17 @@ header {
     text-decoration: none;  
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
-
 }
 .dropdown_menu a:hover{
     color:#4b98c4;
     border-bottom: 3px solid #4b98c4 ;
 
 }
-
 .dropdown_menu .action_btn {
     width: 80%;
     display: flex;
     justify-content: center;
 }
-
-
 /* Diseño del boton al momento de cambiar el tamano */
 @media(max-width: 992px) {
 
@@ -226,13 +189,9 @@ header {
     .habilidades {
         font-size: 24px; 
     }
-    
-
 }
 
-
-/* ----------Sobre mi--------- */
-
+/*----------------------------Sobre mi----------------------------*/
 section .sobremi{
     padding: auto;
 }
@@ -378,7 +337,7 @@ span{
         padding: 20px 10px;
         margin: 10px 0;
     }
-    .contacto {
+    .contenido-seccion {
         padding: 10px;
     }
 
@@ -387,8 +346,9 @@ span{
     }
 }
 
-/* ----------------Experiencia--------------------- */
-/* Estilos para la sección de Experiencia */
+
+/*----------------------------Experiencia----------------------------*/
+
 .experiencia {
     display: flex;
     flex-direction: column;
@@ -447,7 +407,7 @@ span{
     border-radius: 50%;
 }
 
-/* ------------------Educacion------------------- */
+/*----------------------------Educacion----------------------------*/
 
 .educacion {
     background-color: #e3f2fd;
@@ -496,17 +456,9 @@ span{
     line-height: 1.6;
 }
 
+/*----------------------------Formulario----------------------------*/
 
-
-
-
-
-
-
-
-/*-------------------Formulario------------ */
-
-.contacto {
+.contenido-seccion{
     width: 90%;
     max-width: 1000px;
     margin: 20px;
@@ -514,8 +466,8 @@ span{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
-
 
 .contenido-seccion h2 {
     text-align: center;
@@ -600,7 +552,7 @@ form .btn:hover {
     .col {
         min-width: 100%;
     }
-    .contacto {
+    .contenido-seccion {
         padding: 1rem;
     }
 
