@@ -17,30 +17,32 @@ initial-scale=1.0">
 
 <body>
 
-    <div class="contenedor-cabecera">
-        <header>
-            <div class="navbar">
-                <div class="logo"><a href="">CV</a></div>
-                <ul class="links">
+    <section id="nav" class="etiquetas-principales">
+        <div class="contenedor-cabecera">
+            <header>
+                <div class="navbar">
+                    <div class="logo"><a href="">CV</a></div>
+                    <ul class="links">
+                        <li><a href="#sobremii">Sobre mi</a></li>
+                        <li><a href="#experienciaa">Experiencia</a></li>
+                        <li><a href="#educacionn">Educación</a></li>
+
+                    </ul>
+                    <a href="#formulario" class="action_btn">Contáctame</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown_menu">
                     <li><a href="#sobremii">Sobre mi</a></li>
                     <li><a href="#experienciaa">Experiencia</a></li>
                     <li><a href="#educacionn">Educación</a></li>
 
-                </ul>
-                <a href="#formulario" class="action_btn">Contáctame</a>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
+                    <li><a href="#formulario" class="action_btn">Contáctame</a></li>
                 </div>
-            </div>
-            <div class="dropdown_menu">
-                <li><a href="#sobremii">Sobre mi</a></li>
-                <li><a href="#experienciaa">Experiencia</a></li>
-                <li><a href="#educacionn">Educación</a></li>
-
-                <li><a href="#formulario" class="action_btn">Contáctame</a></li>
-            </div>
-        </header>
-    </div>
+            </header>
+        </div>
+    </section>
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
@@ -72,14 +74,17 @@ initial-scale=1.0">
                     control de inventario en Industrial Latina.</p>
 
                 <div class="social-incons">
-                    <a href="https://www.linkedin.com/in/jahir-diaz-cedeño-275262332"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/jahir-diaz-cedeño-275262332"><i
+                            class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/JDC1907/JDC1907.git"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
         </section>
-        <div class="container">
-            <section id="experienciaa" class="experiencia">
+
+        <section id="experienciaa" class="experiencia">
+            <div class="container">
+
                 <h2>Experiencia</h2>
                 <div class="timeline"></div>
 
@@ -111,8 +116,9 @@ initial-scale=1.0">
                         de la información almacenada en los sistemas corporativos.</p>
                     <p><strong>Jun. 2021 - Ago. 2021</strong></p>
                 </div>
-            </section>
-        </div>
+
+            </div>
+        </section>
         <section id="educacionn" class="educacion">
             <h2>Educación</h2>
             <div class="education-item">
